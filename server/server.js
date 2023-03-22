@@ -26,13 +26,13 @@ const Questions = db.activity
 // db.sequelize.sync();
 // force: true will drop the table if it already exists
 db.sequelize.sync({force: true}).then(() => {
-  console.log('Drop and Resync Database with { force: true }');
+  console.log('Drop and resync DB');
   initial();
 });
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to the app" });
 });
 
 // routes
