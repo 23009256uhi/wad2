@@ -13,8 +13,6 @@ RUN apt-get install nodejs wget
 RUN mkdir app
 COPY . ./app
 RUN chmod 777 ./app/startup.sh
-RUN chmod 777 ./app/startfe.sh
-RUN chmod 777 ./app/startbe.sh
 
 RUN cd ./app
 
