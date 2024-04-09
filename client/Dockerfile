@@ -1,4 +1,4 @@
-# Use an official Node.js runtime as the base image
+# Use Node.js runtime as the base image
 FROM node:14
 
 # Set the working directory in the container
@@ -16,7 +16,7 @@ COPY . .
 # Build the React app
 RUN npm run build
 
-# Expose the port on which the React app will run (e.g., 3000)
+# Expose the port on which the React app will run
 EXPOSE 3000
 
 # Start the React app

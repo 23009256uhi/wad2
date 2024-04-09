@@ -1,4 +1,4 @@
-# Use an official Node.js runtime as the base image
+# Use Node.js runtime as the base image
 FROM node:14
 
 # Install PostgreSQL client tools
